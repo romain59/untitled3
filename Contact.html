@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>So! Sport!</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="SiteInternet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12"><h1 class="text-center text-light bg-danger cool" id="bg-danger">So'Sport!</h1></div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="Logosalle.png" alt="Logo de la Salle"/><br><br>
+                <a href="SiteInternet.html"><button type="button" class="btn btn-danger" id="btn-danger">Page d'accueil</button></a><br><br>
+                <a href="InfoCours.html"><button type="button" class="btn btn-danger" id="btn-danger">Info Cours</button></a><br><br>
+                <a href="Inscription.html"><button type="button" class="btn btn-danger" id="btn-danger">Page d'inscription et Paiement</button></a><br><br>
+                <a href="Contact.html"><button type="button" class="btn btn-danger" id="btn-danger">Contact</button></a>
+            </div>
+            <div class="col-sm-8">
+
+                <h2 class="text-center mb-5" id="souligne">Contact</h2>
+
+
+                <form id="myform" class="cssform" action="">
+                    <p><label for="comments">Message :</label><br>
+                        <textarea id="comments" rows="5" cols="25"></textarea></p>
+
+                    <p><label for="user">Nom :</label>
+                        <input type="text" id="user" value="" /></p>
+
+                    <p><label for="emailaddress">Email :</label>
+                        <input type="text" id="emailaddress" value="" /></p>
+
+
+
+                    <p><label for="comments">Sexe :</label>
+                        Homme :<input type="radio" name="sex" />
+                        Femme :<input type="radio" name="sex" /></p>
+
+                    <p><label for="comments"> Personne à contacter:</label>
+                        <input type="checkbox" name="hobby" /> José
+                        <input type="checkbox" name="hobby" class="threepxfix" /> David
+                        <input type="checkbox" name="hobby" class="threepxfix" /> Linda
+                        <input type="checkbox" name="hobby" class="threepxfix" /> Sabrina
+                        <input type="checkbox" name="hobby" class="threepxfix" /> Véronique
+                        <input type="checkbox" name="hobby" class="threepxfix" /> Davina
+                        <input type="checkbox" name="hobby" class="threepxfix" /> Administration
+                    </p>
+
+                    <p><label for="terms">J'accepte les Conditions générales d'Utilisation </label>
+                        <input type="checkbox" id="terms" class="boxes" /></p>
+
+                    <p><div style="margin-left: 150px;">
+                    <input type="submit" class='btn border-danger' value="Envoyer" />
+
+                    <input type="reset" class='btn border-danger' value="Reset" />
+
+                </div></p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

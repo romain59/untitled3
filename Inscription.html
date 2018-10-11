@@ -1,48 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>So! Sport!</title>
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="SiteInternet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-12"><h1 class="text-center text-light bg-danger" id="bg-danger">So'Sport!</h1></div>
+        <div class="col-sm-12"><h1 class="text-center text-light bg-danger cool" id="bg-danger">So'Sport!</h1></div>
     </div>
 
     <div class="container mt-5">
         <div class="row">
             <div class="col-sm-4">
                 <img src="Logosalle.png" alt="Logo de la Salle"/><br><br>
+                <a href="SiteInternet.html"><button type="button" class="btn btn-danger" id="btn-danger">Page d'accueil</button></a><br><br>
                 <a href="InfoCours.html"><button type="button" class="btn btn-danger" id="btn-danger">Info Cours</button></a><br><br>
-                <a href="Inscription.html"><button type="button" class="btn btn-danger" id="btn-danger">Page d'inscription</button></a><br><br>
-                <button type="button" class="btn btn-danger" id="btn-danger">Paiement en ligne</button><br><br>
-                <button type="button" class="btn btn-danger" id="btn-danger">Contact</button>
+                <a href="Inscription.html"><button type="button" class="btn btn-danger" id="btn-danger">Page d'inscription et Paiement</button></a><br><br>
+                <a href="Contact.html"><button type="button" class="btn btn-danger" id="btn-danger">Contact</button></a>
             </div>
             <div class="col-sm-8">
 
-                <h2 class="text-center mb-5">Formulaire d'inscription</h2>
+                <h2 class="text-center mb-5 mt-5" id="souligne">Formulaire d'inscription</h2>
 
                 <form>
 
-                    <input type="text" placeholder="Nom Prenom" minlength="3" maxlength="20" autofocus size="50">
+                    <input id="forme-width" class=" border border-danger" type="text" placeholder="Nom Prenom" minlength="3" maxlength="20" autofocus size="50" ">
                     <br><br>
-                    <input type="text" placeholder="adresse postale " minlength="3" maxlength="50" size="50">
+                    <input  id="forme-width" class=" border border-danger" type="text" placeholder="adresse postale " minlength="3" maxlength="50" size="50">
                     <br><br>
-                    <input type="text" placeholder="entrez votre pseudo" minlength="3" maxlength="10" size="50">
+                    <input id="forme-width" class=" border border-danger" type="text" placeholder="Numéro de Téléphone" minlength="3" maxlength="10" size="50">
                     <br><br>
-                    <input type="password" placeholder="entrez votre mot de passe" size="50">
+                    <input id="forme-width" class=" border border-danger" type="email" placeholder="entrez votre email" size="50">
                     <br><br>
-                    <input type="email" placeholder="entrez votre email" size="50">
+                    <input class="btn border-danger" type="submit" value="valider le formulaire" size="10">
+
+
+                </form><br>
+                <hr class="bg-danger"><br>
+
+                <h2 class="text-center mb-5" id="souligne">Paiement</h2>
+                <form id=paiement>
+                <fieldset>
+                    <legend>Votre identité</legend>
+
+                    <ol>
+                        <li>
+                            <label  for=nom>Nom</label>
+                            <input class=" border border-danger" id=nom name=nom type=text placeholder="Prénom et nom" required autofocus>
+                        </li>
+                        <li>
+                            <label for=email>Email</label>
+                            <input class=" border border-danger" id=email name=email type=email placeholder="exemple@domaine.com" required>
+                        </li>
+                        <li>
+                            <label for=telephone>Téléphone</label>
+                            <input class=" border border-danger" id=telephone name=telephone type=tel placeholder="par ex&nbsp;: +3375500000000" required>
+                        </li>
+                    </ol>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adresse de livraison</legend>
+                    <ol>
+                        <li>
+                            <label for=adresse>Adresse</label>
+                            <textarea class=" border border-danger" id=adresse name=adresse rows=5 required></textarea>
+                        </li>
+                        <li>
+                            <label for=codepostal>Code postal</label>
+                            <input class=" border border-danger" id=codepostal name=codepostal type=text required>
+                        </li>
+                        <li>
+                            <label for=pays>Pays</label>
+                            <input class=" border border-danger" id=pays name=pays type=text required>
+                        </li>
+                    </ol>
+                </fieldset>
+                <fieldset>
+                    <legend>Informations CB</legend>
+                    <ol>
+                        <li>
+                            <fieldset>
+                                <legend>Type de Carte Bancaire</legend>
+                                <ol>
+                                    <li>
+                                        <input id=visa name=type_de_carte type=radio>
+                                        <label for=visa>VISA</label>
+                                    </li>
+                                    <li>
+                                        <input id=amex name=type_de_carte type=radio>
+                                        <label for=amex>Electron</label>
+                                    </li>
+                                    <li>
+                                        <input id=mastercard name=type_de_carte type=radio>
+                                        <label for=mastercard>Mastercard</label>
+                                    </li>
+                                </ol>
+                            </fieldset>
+                        </li>
+                        <li>
+                            <label for=numero_de_carte>Numéro de carte</label>
+                            <input class=" border border-danger" id=numero_de_carte name=numero_de_carte type=number required>
+                        </li>
+                        <li>
+                            <label for=securite>Code sécurité</label>
+                            <input class=" border border-danger" id=securite name=securite type=number required>
+                        </li>
+                        <li>
+                            <label for=nom_porteur>Nom titulaire </label>
+                            <input class=" border border-danger" id=nom_porteur name=nom_porteur type=text placeholder="Même nom que sur la carte" required>
+                        </li>
+                    </ol>
+                </fieldset>
+
+                <fieldset>
+                    <button class="btn border-danger" type=submit>J'achète !</button>
+                </fieldset>
+            </form><br>
+                <hr class="bg-danger"><br>
+
+                <h2 class="text-center mb-5" id="souligne">Rechargement de la Carte</h2>
+
+                <form>
+
+                    <input class=" border border-danger" id="forme-width" type="text" placeholder="Numéro de Carte" minlength="3" maxlength="20" autofocus size="50" ">
                     <br><br>
-                    <input type="submit" value="valider le formulaire">
+                    <input class=" border border-danger"  id="forme-width" type="text" placeholder="Code d'activation" minlength="3" maxlength="50" size="50">
+                    <br><br>
+                    <input class="btn border-danger" type="submit" value="valider le formulaire" size="10"><br><br>
 
 
                 </form>
-
             </div>
         </div>
     </div>
